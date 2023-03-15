@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../App";
 import LogoIcon from "../assets/icons";
 
 const Header = () => {
+
+    const {isDark,setIsDark} = useContext(ThemeContext);
+
     return(
         <header className = "header">
             <div className="container">
@@ -10,7 +14,7 @@ const Header = () => {
                         <LogoIcon/>
                         <span>Haeun's Blog</span>
                     </div>
-                    <button className="icon">🔆</button>
+                    <button onClick={()=> setIsDark(!isDark)} className="icon">{isDark?'🌙':'🔆'}</button>
                 </div>
             </div>
             

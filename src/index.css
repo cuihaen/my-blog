@@ -58,3 +58,25 @@ header .logo{
 header .logo span{
   margin-left: .5rem;
 }
+
+/* Post */
+.article{
+  margin: 4rem 0;
+}
+
+.post-wrapper{
+  width:100%;
+}
+
+/* Code */
+
+.code{
+  position:relative;
+}
+
+.code .copy-icon{
+  position: absolute;
+  top:1rem;
+  right:1rem;
+  z-index: 5;
+}
